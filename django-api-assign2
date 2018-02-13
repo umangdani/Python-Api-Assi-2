@@ -1,0 +1,40 @@
+Table
+
+
+Discussion:
+title
+text
+type: ('Article', 'Question', 'Post', 'Blog')
+added_by
+is_published
+created_date
+modified_date
+image
+
+
+
+Comment:
+discussion(relation)
+text
+added_by
+created_date
+modified_date
+
+
+
+
+Apis:
+
+1. Get all discussions which type is Either Article or Question
+2. Add comment api 
+   notes:only logged in user can add comment
+         one user can not add more than 1 comment in particular discussion
+         user can not comment on his own created discussion
+
+3. Get all discussions which title matches searched term
+  example: /api/discussion/list/?title=Sports
+
+
+
+
+
